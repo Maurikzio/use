@@ -1,0 +1,32 @@
+footer{
+    background: rgb(19, 24, 26);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    .the-rights{
+
+    }
+    .to-top{
+        position: relative;
+        // background: red;
+        button{
+            font-size: 25px;
+            position: absolute;
+            color: white;
+            right: 20px;
+            bottom: 5px;
+            animation: upDown 1s ease-in-out infinite;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+    }
+}
+@keyframes upDown{
+    0%, 100%{
+        bottom: 5px;
+    }
+    50%{
+        bottom: 10px;
+    }
+}

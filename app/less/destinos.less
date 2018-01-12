@@ -1,0 +1,100 @@
+.destinos{
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background: rgb(19, 24, 26);
+    h2{
+        font-family: 'SixCaps'; 
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 70px;
+        color: #67BE9B;
+        // background: red;
+        margin-bottom: 50px;
+    }
+    .destinos-list{
+        list-style: none;
+        // padding-left: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // background: red;
+        height: 200px;
+        .toModal{
+            color: white;
+            font-size: 30px;
+            margin-top: 100px;
+            cursor: pointer;
+            border: 1px solid gold;
+            border-radius: 50%;
+            text-align: center;
+            width: 200px;
+            padding-right: 60px;
+            padding-left: 60px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            text-transform: uppercase;
+        }
+        #toModalIvano{
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 75px;
+            padding-bottom: 75px;
+            font-size: 20px;
+        }
+    }
+    #myModal{
+        display: none;
+        background: rgb(22, 39, 43);
+        color: white;
+        margin: auto;
+        margin-top: -150px;
+        .the-modal-img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .the-modal-content{
+            transition: 1s all ease-in-out;         
+            .close-Modal{
+                // background: red;
+                display: block;
+                text-align: right;
+                cursor: pointer;
+                font-size: 50px;
+                line-height: 20px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                transition: 1s all ease-in-out; 
+                
+            }
+            #the-text{
+                #city-description{
+                    // background: orange;
+                    font-size: 20px;
+                }
+                #universities-list{
+                    // background: aqua;
+                    text-align: center;
+                    font-weight: 700;
+                    // display: flex;
+                    // padding-left: 0;
+                    .newLi{
+                        font-weight: 400;
+                        text-align: left;
+                        padding-top: 10px;
+                        padding-bottom: 5px;
+                        // display: flex;
+                    }
+                    a{
+                        color: white;
+                        background: grey;
+                        padding: 5px;
+                        margin-left: 20px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

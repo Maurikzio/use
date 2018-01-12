@@ -1,0 +1,39 @@
+footer {
+  background: #13181a;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+footer .to-top {
+  position: relative;
+}
+footer .to-top button {
+  font-size: 25px;
+  position: absolute;
+  color: white;
+  right: 20px;
+  bottom: 5px;
+  -webkit-animation: upDown 1s ease-in-out infinite;
+          animation: upDown 1s ease-in-out infinite;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+@-webkit-keyframes upDown {
+  0%,
+  100% {
+    bottom: 5px;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+@keyframes upDown {
+  0%,
+  100% {
+    bottom: 5px;
+  }
+  50% {
+    bottom: 10px;
+  }
+}

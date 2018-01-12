@@ -1,0 +1,103 @@
+.destinos {
+  padding-top: 50px;
+  padding-bottom: 200px;
+  background: #13181a;
+}
+.destinos h2 {
+  font-family: 'SixCaps';
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 70px;
+  color: #67BE9B;
+  margin-bottom: 50px;
+}
+.destinos .destinos-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+}
+.destinos .destinos-list .toModal {
+  color: white;
+  font-size: 30px;
+  margin-top: 100px;
+  cursor: pointer;
+  border: 1px solid gold;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  text-align: center;
+  width: 200px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-transform: uppercase;
+}
+.destinos .destinos-list #toModalIvano {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  font-size: 20px;
+}
+.destinos #myModal {
+  display: none;
+  background: #16272b;
+  color: white;
+  margin: auto;
+  margin-top: -150px;
+}
+.destinos #myModal .the-modal-img {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+}
+.destinos #myModal .the-modal-content {
+  -webkit-transition: 1s all ease-in-out;
+  -o-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+}
+.destinos #myModal .the-modal-content .close-Modal {
+  display: block;
+  text-align: right;
+  cursor: pointer;
+  font-size: 50px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  -webkit-transition: 1s all ease-in-out;
+  -o-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+}
+.destinos #myModal .the-modal-content #the-text #city-description {
+  font-size: 20px;
+}
+.destinos #myModal .the-modal-content #the-text #universities-list {
+  text-align: center;
+  font-weight: 700;
+}
+.destinos #myModal .the-modal-content #the-text #universities-list .newLi {
+  font-weight: 400;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.destinos #myModal .the-modal-content #the-text #universities-list a {
+  color: white;
+  background: grey;
+  padding: 5px;
+  margin-left: 20px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  cursor: pointer;
+}
