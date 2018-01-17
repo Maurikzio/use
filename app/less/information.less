@@ -1,54 +1,76 @@
 .information{
     margin-top: 0px;
-    background: rgb(19, 24, 26);
+    // background: rgb(19, 24, 26);
+    // background: rgb(246, 246, 246);  
+    background: snow;  
     // height: 100vh;
     padding-top: 100px;
     padding-right: 100px;
     padding-left: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
+    overflow-y: hidden;
+
     .why-abroad{
         // height: 50vh;
         // background: rgba(250, 0, 0, .5);
         margin-bottom: 150px;
         position: relative;
         .why-abroad-content{
-            background: rgb(22, 39, 43); 
+            // background: rgba(22, 39, 43, .5); 
+            // background: rgb(19, 24, 26);
+            // background: rgba(22, 39, 43, .9); 
+            // background: #596869;
+            background: #515751;                    
             margin-left: auto;
             position: relative;
-            padding-top: 100px;
-            padding-bottom: 30px;
-            box-shadow: 3px 3px 20px rgb(22, 39, 43);
-            // box-shadow: 5px 5px 40px rgb(216, 180 69);            
-            h1{
-                color: #67BE9B;
-                font-family: 'SixCaps';
-                text-transform: uppercase;
-                font-size: 50px;
-                // background: rgba(216, 180, 69, .2);
-                // margin-left: -50px;
-                padding-left: 5px;
-                position: absolute;
-                z-index: 999;
-                top: -15px;
-                left: -150px;
-                letter-spacing: 7px;
-                background: rgba(22, 39, 43, .5);                
-                // text-shadow: 1px 2px grey;
-            }            
+            padding-top: 50px;
+            padding-bottom: 40px;
+            // box-shadow: 3px 3px 20px rgba(22, 39, 43, 1);
+            box-shadow: 3px 3px 20px rgba(128, 128, 128, .5);            
+            // box-shadow: 5px 5px 40px rgb(216, 180 69);  
+            hr{
+                background-color: #E65634;
+                width: 500px;
+                height: 2px;
+                
+            }
+                h1{
+                    color: white;
+                    // font-family: 'SixCaps';
+                    text-transform: uppercase;
+                    font-size: 30px;
+                    text-align: center;                    
+                    // border-top: 1px solid red;
+                    // background: rgba(216, 180, 69, .2);
+                    // margin-left: -50px;
+                    padding-left: 5px;
+                    // position: absolute;
+                    // z-index: 999;
+                    // top: -15px;
+                    // left: -150px;
+                    letter-spacing: 7px;
+                    // background: rgba(22, 39, 43, .5);                
+                    // text-shadow: 1px 2px grey;
+                }          
             p{
-                color: white;
+                // color: rgb(164, 150, 140);
+                // color: rgb(204, 186, 157);
+                color: #F5F9E9;
                 font-size: 18px;
+                text-align: center;
                 // font-weight: 200;
             }
         }
         .why-abroad-img{
             width: 400px;
-            height: 550px;
-            background: url("../images/information/whyabroad2.jpg") center;
+            height: 760px;
+            background: url("../images/tram.jpg") center;
+            background-size: cover;
+            // opacity: .8;
             padding: 0px;
             // padding-right: 50px;
             position: absolute;
-            top: -70px;
+            top: -30px;
             left: -2%;
             // z-index: -1;
         }
@@ -57,57 +79,60 @@
         position: relative;
         // background: red;
         .ukraine-content{
-            background: rgb(22, 39, 43); 
+            // background: rgba(22, 39, 43, 1); 
+            background: #515751;                                
             color: white;
-            padding-top: 100px;
-            padding-bottom: 30px;
+            padding-top: 50px;
+            padding-bottom: 40px;
             position: relative;
             box-shadow: 3px 3px 20px rgb(22, 39, 43);
+            hr{
+                background-color: #E65634;
+                width: 200px;
+                height: 2px;
+            }
             h2{
                 text-transform: uppercase;
-                font-size: 70px;
-                color: #67BE9B;
-                position: absolute;
-                font-family: 'SixCaps';                
-                top: 15px;
-                right: -80px;
-                z-index: 90;
-                background: rgba(22, 39, 43, .2);
-                text-shadow: 1px 1px 10px rgb(22, 39, 43);  
-                letter-spacing: 5px;              
+                font-size: 30px;
+                color: white;
+                text-align: center;
+                // background: rgba(22, 39, 43, .2);
+                // text-shadow: 1px 1px 10px rgb(22, 39, 43);  
+                letter-spacing: 7px;              
             }
             p{
-                color: white;
+                color: #F5F9E9;                
                 font-size: 18px;
                 // font-weight: 200;
+                text-align: center;
             }
                         
         }
         .ukraine-img{
             width: 400px;
-            height: 700px;
+            height: 780px;
             background: url("../images/information/ukraine.jpg") center;  
             background-size: cover; 
             position: absolute;
             top: -35px;
-            right: -1.5%;         
+            right: -2%;         
         }
     }
 }   
 
-@media (min-width: 1300px){
+@media (min-width: 1320px){
     .information{
         // background: red;
         .why-abroad{
             .why-abroad-img{
-                left: 7%;
+                left: 0.5%;
             }
         }
         .ukraine{
             .ukraine-img{
-                right: 7.5%;
+                right: .5%;
                 top: -45px;
-                height: 550px;
+                // height: 550px;
             }
         }
     }

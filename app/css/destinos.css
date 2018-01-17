@@ -3,13 +3,16 @@
   padding-bottom: 200px;
   background: #13181a;
 }
+.destinos hr {
+  background-color: #E65634;
+  width: 300px;
+  height: 2px;
+}
 .destinos h2 {
-  font-family: 'SixCaps';
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 70px;
-  color: #67BE9B;
-  margin-bottom: 50px;
+  font-size: 50px;
+  color: white;
 }
 .destinos .destinos-list {
   list-style: none;
@@ -17,37 +20,68 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   height: 200px;
+  margin-top: 50px;
 }
 .destinos .destinos-list .toModal {
   color: white;
   font-size: 30px;
   margin-top: 100px;
   cursor: pointer;
-  border: 1px solid gold;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
   text-align: center;
-  width: 200px;
-  padding-right: 60px;
-  padding-left: 60px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 300px;
   text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+.destinos .destinos-list .toModal:after {
+  content: "Lviv";
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+}
+.destinos .destinos-list #toModalLviv {
+  background: url("../images/destin1.jpg") center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+}
+.destinos .destinos-list #toModalLviv:after {
+  content: "Lviv";
+  width: 100%;
+}
+.destinos .destinos-list #toModalKiev {
+  background: url("../images/destin3.jpg") center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.destinos .destinos-list #toModalKiev:after {
+  content: "Kiev";
+  width: 100%;
 }
 .destinos .destinos-list #toModalIvano {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  font-size: 20px;
+  background: url("../images/destin4.jpg") center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.destinos .destinos-list #toModalIvano:after {
+  content: "Ivano Frankivsk";
+  width: 100%;
 }
 .destinos #myModal {
   display: none;

@@ -1,0 +1,50 @@
+.aboutUs-content {
+  background: url("../images/group.jpg") center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 0px;
+  position: relative;
+  height: 100vh;
+}
+.aboutUs-content .heading {
+  position: relative;
+  z-index: 100;
+}
+.aboutUs-content .heading hr {
+  background-color: #E65634;
+  width: 300px;
+  height: 2px;
+}
+.aboutUs-content .heading h1 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+.aboutUs-content .power-of-study {
+  margin: 0 auto;
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding-top: 10px;
+  position: relative;
+  top: 0;
+  z-index: 100;
+}
+.aboutUs-content .power-of-study h2 {
+  text-align: center;
+  font-size: 28px;
+}
+.aboutUs-content .power-of-study p {
+  font-size: 20px;
+}
+.aboutUs-content .banner {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}

@@ -76,7 +76,7 @@ modalKiev.onclick = function(){
 }
 modalIvano.onclick = function(){
     modal.style.display = 'block';
-    modalImg.style.backgroundImage = "url('../images/destiny/ivano.jpg')";   
+    modalImg.style.backgroundImage = "url('../images/destiny/ivano2.jpg')";   
     cityDescription.innerText = `${ivanoDescription}`;
     uniList.innerText = `UNIVERSITIES OF IVANO FRANKIVSK`; 
     showUniversities(ivanoUniversities, "universities-list");   
@@ -125,4 +125,4 @@ $(".location").one("click mouseenter", function() {
     // alert('is working');
     $('#my-arrow').addClass('animated bounceInLeft');
     document.getElementById('my-arrow').style.display = "block";   
-  });
+});

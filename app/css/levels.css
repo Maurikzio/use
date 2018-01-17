@@ -1,0 +1,37 @@
+.levels {
+  background: url("../images/book.jpg") center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100vh;
+  padding-top: 150px;
+}
+.levels .levels-list {
+  list-style: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.levels .levels-list .the-level {
+  margin-top: 40px;
+  padding: 40px 40px;
+  border: 1px solid white;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+}
+.levels .levels-list .the-level:nth-child(odd) {
+  text-align: right;
+  margin-right: 30px;
+}
+.levels .levels-list .the-level i {
+  color: white;
+  font-size: 100px;
+}
+.levels .levels-list .the-level p {
+  color: white;
+  font-size: 20px;
+  width: 200px;
+}
+.levels .levels-list .lvl {
+  text-align: center;
+  display: inline-block;
+}

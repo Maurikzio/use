@@ -2,44 +2,80 @@
     padding-top: 50px;
     padding-bottom: 200px;
     background: rgb(19, 24, 26);
+    hr{
+        background-color: #E65634;
+        width: 300px;
+        height: 2px;
+    }
     h2{
-        font-family: 'SixCaps'; 
+        // font-family: 'SixCaps'; 
         text-transform: uppercase;
         letter-spacing: 5px;
-        font-size: 70px;
-        color: #67BE9B;
-        // background: red;
-        margin-bottom: 50px;
+        font-size: 50px;
+        color: white;
+        // background: pink;
+        // margin-bottom: 50px;
     }
     .destinos-list{
         list-style: none;
         // padding-left: 15px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         // background: red;
         height: 200px;
+        margin-top: 50px;
         .toModal{
             color: white;
             font-size: 30px;
             margin-top: 100px;
             cursor: pointer;
-            border: 1px solid gold;
-            border-radius: 50%;
+            // border: 1px solid gold;
+            border-radius: 24px;
             text-align: center;
-            width: 200px;
-            padding-right: 60px;
-            padding-left: 60px;
-            padding-top: 80px;
-            padding-bottom: 80px;
+            // width: 200px;
+            flex-grow: 1;
+            height: 300px;
+            // padding-right: 60px;
+            // padding-left: 60px;
+            // padding-top: 80px;
+            // padding-bottom: 80px;
             text-transform: uppercase;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            &:after{
+                content: "Lviv";
+                // background: red;
+                position: absolute;
+                bottom: -70px;
+                left: 0;
+            }
+        }
+        #toModalLviv{
+            background: url("../images/destin1.jpg") center;
+            background-size: cover;
+            position: relative;
+            &:after{
+                content: "Lviv";
+                width: 100%;                
+            }
+        }
+        #toModalKiev{
+            background: url("../images/destin3.jpg") center;
+            background-size: cover;
+            &:after{
+                content: "Kiev";
+                width: 100%;                
+            }
         }
         #toModalIvano{
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 75px;
-            padding-bottom: 75px;
-            font-size: 20px;
+            background: url("../images/destin4.jpg") center;
+            background-size: cover;
+            &:after{
+                content: "Ivano Frankivsk";
+                width: 100%;
+            }
         }
     }
     #myModal{
