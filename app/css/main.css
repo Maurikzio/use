@@ -208,7 +208,7 @@ header .banner {
   position: relative;
 }
 .destinos .destinos-list .toModal:after {
-  content: "Lviv";
+  content: "";
   position: absolute;
   bottom: -70px;
   left: 0;
@@ -248,7 +248,22 @@ header .banner {
   margin: auto;
   margin-top: -150px;
 }
-.destinos #myModal .the-modal-img {
+.destinos #myModal .in-lviv {
+  background: url("../images/destiny/lviv.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+}
+.destinos #myModal .in-kiev {
+  background: url("../images/destiny/kiev.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+}
+.destinos #myModal .in-ivano {
+  background: url("../images/destiny/ivano2.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
