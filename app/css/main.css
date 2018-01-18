@@ -617,3 +617,70 @@ footer .to-top button {
 body {
   font-family: 'Quicksand';
 }
+.the-main-page {
+  background: url("../images/mainPage/back-main.png") no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  height: 100vh;
+}
+.the-main-page .the-content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.the-main-page .the-content a {
+  text-align: center;
+  margin-top: 8%;
+  padding: 30px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: relative;
+  -webkit-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+.the-main-page .the-content a::before {
+  content: 'Click to go';
+  font-size: 30px;
+  position: absolute;
+  top: -20px;
+  left: 22%;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: white;
+  font-weight: 800;
+}
+.the-main-page .the-content a:hover {
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.the-main-page .the-content a:hover::before {
+  top: 42%;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.the-main-page .the-content a img {
+  width: 200px;
+  height: auto;
+  margin: auto;
+}
+.the-main-page .the-content img {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  margin-left: -20px;
+}

@@ -10,3 +10,56 @@
 body{
 	font-family: 'Quicksand';
 }
+.the-main-page{
+	background: url("../images/mainPage/back-main.png") no-repeat;
+	background-size: contain;
+	height: 100vh;
+	.the-content{
+		// background: rgba(226, 136, 136, .5);
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+		a{
+			// background: pink;
+			text-align: center;
+			// display: inline-block;
+			margin-top: 8%;
+			padding: 30px;
+			border-radius: 50%;
+			// border: 1px solid transparent;
+			position: relative;
+			transition: .5s all ease-in-out;
+			&::before{
+				content: 'Click to go';
+				font-size: 30px;
+				position: absolute;
+				top: -20px;
+				left: 50% - 28px;
+				transition: .5s ease-in-out;
+				color: white;
+				font-weight: 800;
+			}			
+			&:hover{
+				background: rgba(0, 0, 0, .8);
+				// border: 1px solid red;
+				transition: .5s ease-in-out;
+			}
+			&:hover::before{
+				// background: red;
+				top: 50% - 8px;
+				transition: .5s ease-in-out;
+			}
+			img{
+				width: 200px;
+				height: auto;
+				margin: auto;
+			}
+		}
+		img{
+			align-self: flex-end;
+			// background: red;
+			margin-left: -20px;
+		}
+	}
+}
