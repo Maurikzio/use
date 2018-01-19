@@ -96,6 +96,15 @@
           background-size: cover;
   background-position: center;
 }
+.destinos #myModal .in-lviv {
+  background-image: url("../images/destiny/lviv.jpg");
+}
+.destinos #myModal .in-kiev {
+  background-image: url("../images/destiny/kiev.jpg");
+}
+.destinos #myModal .in-ivano {
+  background-image: url("../images/destiny/ivano2.jpg");
+}
 .destinos #myModal .the-modal-content {
   -webkit-transition: 1s all ease-in-out;
   -o-transition: 1s all ease-in-out;
