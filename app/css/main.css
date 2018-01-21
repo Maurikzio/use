@@ -29,6 +29,19 @@ header nav a {
   text-transform: uppercase;
   font-size: 20px;
   width: 170px;
+  background: transparent;
+}
+header nav a:hover {
+  background: white;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+header nav a:nth-child(4):hover {
+  background: none;
+  color: none;
 }
 header nav .theLogo {
   background: none;
@@ -67,6 +80,7 @@ header .banner {
   overflow-y: hidden;
 }
 .information .why-abroad {
+  background: yellow;
   margin-bottom: 150px;
   position: relative;
 }
@@ -98,7 +112,7 @@ header .banner {
   text-align: center;
 }
 .information .why-abroad .why-abroad-img {
-  width: 400px;
+  width: 100%;
   height: 760px;
   background: url("../images/tram.jpg") center;
   -webkit-background-size: cover;
@@ -138,7 +152,7 @@ header .banner {
   text-align: center;
 }
 .information .ukraine .ukraine-img {
-  width: 400px;
+  width: 100%;
   height: 780px;
   background: url("../images/information/ukraine.jpg") center;
   -webkit-background-size: cover;
@@ -149,7 +163,7 @@ header .banner {
 }
 @media (min-width: 1320px) {
   .information .why-abroad .why-abroad-img {
-    left: 0.5%;
+    left: 0%;
   }
   .information .ukraine .ukraine-img {
     right: .5%;
@@ -587,12 +601,12 @@ footer .to-top button {
   z-index: 3;
 }
 .levels {
-  background: url("../images/book.jpg") center;
+  background: url("../images/levels/library.jpg") center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   height: 100vh;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 .levels .levels-list {
   list-style: none;
@@ -600,28 +614,82 @@ footer .to-top button {
   padding-right: 30px;
 }
 .levels .levels-list .the-level {
-  margin-top: 40px;
-  padding: 40px 40px;
-  border: 1px solid white;
-  -webkit-border-radius: 24px;
-          border-radius: 24px;
-}
-.levels .levels-list .the-level:nth-child(odd) {
-  text-align: right;
-  margin-right: 30px;
-}
-.levels .levels-list .the-level i {
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
-  font-size: 100px;
 }
-.levels .levels-list .the-level p {
-  color: white;
-  font-size: 20px;
-  width: 200px;
+.levels .levels-list .the-level:nth-child(even) {
+  margin-left: 15px;
 }
-.levels .levels-list .lvl {
-  text-align: center;
-  display: inline-block;
+.levels .levels-list .the-level:nth-child(even) .lvl-content .lvl-description {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.levels .levels-list .the-level .lvl-content .lvl-description {
+  padding-top: 10px;
+}
+.levels .levels-list .the-level .lvl-content .lvl-description p {
+  font-size: 18px;
+}
+.levels .levels-list .the-level .lvl-content .lvl-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.levels .levels-list .the-level .lvl-content .lvl-icon i {
+  font-size: 110px;
+}
+.levels .levels-list .mst .lvl-content .lvl-icon {
+  padding-top: 15px;
+}
+.the-video {
+  background: snow;
+  padding-top: 5px;
+}
+.living-costs {
+  background: url("../images/costs/back2.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-top: 150px;
+}
+.living-costs .heading {
+  margin-bottom: 50px;
+}
+.living-costs .heading hr {
+  background-color: #E65634;
+  width: 400px;
+  height: 2px;
+}
+.living-costs .heading h2 {
+  font-size: 50px;
+}
+.living-costs .alojamiento .the-icon {
+  background: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  width: 50%;
+  padding: 40px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 body {
   font-family: 'Quicksand';

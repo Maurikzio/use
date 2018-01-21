@@ -1,49 +1,65 @@
 .levels{
-    background: url("../images/book.jpg") center;
+    background: url("../images/levels/library.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    padding-top: 150px;
+    padding-top: 200px;
     .levels-list{
         list-style: none;
         padding-left: 30px;
-        padding-right: 30px;        
-        // background: pink;
+        padding-right: 30px;
         .the-level{
-            // background: rgb(149, 212, 149);
-            margin-top: 40px;
-            padding: 40px 40px;
-            // text-align: center;
-            border: 1px solid white;
-            border-radius: 24px;
-            &:nth-child(odd){
-                text-align: right;
-                // background: red;
-                margin-right: 30px;
+            background: rgba(0, 0, 0, .6);
+            // border: 1px solid white;
+            // border-radius: 24px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            color: white;
+            &:nth-child(even){
+                margin-left: 15px;
+                .lvl-content{
+                    .lvl-description{
+                        order: 1;
+                    }
+                }
             }
-            i{
-                color: white;
-                font-size: 100px;
-            }
-            p{
-                color: white;
-                font-size: 20px;
-                width: 200px;
+            .lvl-content{
+                .lvl-description{
+                    // background: orange;
+                    padding-top: 10px;
+                    p{
+                        font-size: 18px;
+                    }
+                }
+                .lvl-icon{
+                    // background: aqua;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    i{
+                        // background: red;
+                        font-size: 110px;
+                    }
+                    p{
+                        // background: green;
+                    }
+                }
             }
         }
-        .lvl{
-            // background: gold;
-            text-align: center;
-            display: inline-block;
+        .jr{
 
-            i{
-                // background: red;
-            }
-            p{
-                // background: green;
-            }
         }
-        .junior{
+        .lic{
+
+        }
+        .mst{
+            // background: red;
+            .lvl-content{
+                .lvl-icon{
+                    padding-top: 15px;
+                }
+            }
         }
     }
 }

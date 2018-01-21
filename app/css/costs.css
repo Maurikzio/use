@@ -1,0 +1,25 @@
+.living-costs {
+  background: url("../images/costs/back2.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding-top: 150px;
+}
+.living-costs .heading {
+  margin-bottom: 50px;
+}
+.living-costs .heading hr {
+  background-color: #E65634;
+  width: 400px;
+  height: 2px;
+}
+.living-costs .heading h2 {
+  font-size: 50px;
+}
+.living-costs .alojamiento .the-icon {
+  background: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  width: 50%;
+  padding: 40px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}

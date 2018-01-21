@@ -123,9 +123,11 @@ function myScroll(go){
     return false;
 }
 
-//animation
+//animation en el click here
 $(".location").one("click mouseenter", function() {
     // alert('is working');
     $('#my-arrow').addClass('animated bounceInLeft');
     document.getElementById('my-arrow').style.display = "block";   
 });
+
+//map animation
