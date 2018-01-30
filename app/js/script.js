@@ -68,6 +68,12 @@ modalLviv.onclick = function(){
     uniList.innerText = `UNIVERSITIES OF LVIV`;
     showUniversities(lvivUniversities, "universities-list");
 }
+var videoLviv = document.getElementById("toVideoLviv");
+var videoModal = document.getElementById("modal-video");
+videoLviv.onclick = function(){
+//    alert('playing video');
+   videoModal.style.display = "block"; 
+}
 modalKiev.onclick = function(){
     modal.style.display = 'block';
     modalImg.className = "the-modal-img in-kiev col-4 ";
