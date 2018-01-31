@@ -2,6 +2,7 @@
   padding-top: 50px;
   padding-bottom: 70px;
   background: #13181a;
+  position: relative;
 }
 .destinos hr {
   background-color: #E65634;
@@ -179,13 +180,33 @@
 }
 .destinos #modal-video {
   display: none;
+  position: absolute;
+  bottom: -60px;
+  left: 30%;
+}
+.destinos #modal-video #toCloseVideo {
+  position: absolute;
+  color: white;
+  font-size: 70px;
+  line-height: 50px;
+  padding: 0 18px 15px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  left: 85%;
+  top: -60px;
+}
+.destinos #modal-video #toCloseVideo:hover {
+  background: red;
+  cursor: pointer;
 }
 .destinos #myModal {
   display: none;
   background: #16272b;
   color: white;
   margin: auto;
-  margin-top: -150px;
+  position: absolute;
+  left: 7%;
+  top: 190px;
 }
 .destinos #myModal .the-modal-img {
   background-repeat: no-repeat;

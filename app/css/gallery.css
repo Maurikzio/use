@@ -1,0 +1,16 @@
+.body-gallery .header-g {
+  position: fixed;
+  background: #13181a;
+}
+.body-gallery .gallery-content {
+  padding-top: 100px;
+}
+.body-gallery .gallery-content .first-column img {
+  margin-top: 15px;
+}
+.body-gallery .gallery-content .second-column img {
+  margin-top: 15px;
+}
+.body-gallery .gallery-content .third-column img {
+  margin-top: 15px;
+}

@@ -2,8 +2,10 @@ var modalLviv = document.getElementById('toModalLviv');
 var modalKiev = document.getElementById('toModalKiev');
 var modalIvano = document.getElementById('toModalIvano');
 var modal = document.getElementById('myModal');
+var modalVideo = document.getElementById('modal-video');
 var modalImg = document.getElementById('modal-img'); 
 var close = document.getElementById('toClose');
+var closeVideo = document.getElementById('toCloseVideo');
 var cityDescription = document.getElementById('city-description');
 var uniList = document.getElementById('universities-list');
 var isClosed = true;
@@ -94,6 +96,9 @@ modalIvano.onclick = function(){
 close.onclick = function(){
     modal.style.display = 'none';
     isClosed = true;       
+}
+closeVideo.onclick = function(){
+    modalVideo.style.display = 'none';
 }
 
 modalQuito.onclick = function(){
