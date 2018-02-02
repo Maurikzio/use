@@ -62,6 +62,7 @@ let kievDescription = `Kiev no solo es la ciudad capital también es una de las 
 Acá podemos encontrar desde Cúpulas doradas de impresionantes iglesias, hasta impresionantes museos que cuentan la historia de la segunda guerra mundial además de una gran variedad de arquitectura y por supuesto una vida urbana que nunca se detiene hacen de Kiev una ciudad multicultural que recibe millones de estudiantes de diferentes nacionalidades cada año.`;
 let ivanoDescription = `Esta ciudad es la puerta de entrada a los famosos Cárpatos una de las maravillas naturales de ucrania, es una ciudad con un encanto inolvidable con sus edificios diseñados de diferentes estilos.
 Es una ciudad muy conocida ya que alberga muchos estudiantes que desean seguir carreras de ingeniería en petróleos y gas.`;
+
 modalLviv.onclick = function(){
     modal.style.display = 'block';
     modalImg.className = "the-modal-img in-lviv col-4 ";
@@ -141,4 +142,3 @@ $(".location").one("click mouseenter", function() {
     document.getElementById('my-arrow').style.display = "block";   
 });
 
-//map animation

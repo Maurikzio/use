@@ -2,6 +2,7 @@
   background: url("../images/costs/back2.jpg");
   -webkit-background-size: cover;
           background-size: cover;
+  height: 100vh;
   padding-top: 150px;
   padding-bottom: 90px;
 }

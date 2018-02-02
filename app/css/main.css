@@ -1,4 +1,4 @@
-header {
+.my-own-header {
   background: url("../images/header/header-background.jpg") center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -7,56 +7,63 @@ header {
   position: relative;
   margin-bottom: 0px;
 }
-header nav {
-  height: 100px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.my-own-header .navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.my-own-header .navbar button {
+  cursor: pointer;
+}
+.my-own-header .navbar .navbar-brand {
+  display: none;
+}
+.my-own-header .navbar .navbar-brand img {
+  width: 50px;
+  background: pink;
+}
+.my-own-header .navbar .navbar-nav {
+  width: 100%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  z-index: 999;
 }
-header nav a {
+.my-own-header .navbar .navbar-nav .nav-item {
+  text-align: center;
+  width: 14.28%;
+}
+.my-own-header .navbar .navbar-nav .nav-item a {
   color: white;
   text-transform: uppercase;
   font-size: 20px;
-  width: 170px;
   background: transparent;
+  -webkit-transition: 0.5s all ease-in-out;
+  -o-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
-header nav a:hover {
-  background: white;
+.my-own-header .navbar .navbar-nav .nav-item a:hover {
   color: black;
-  text-decoration: none;
+  background: white;
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-header nav a:nth-child(4):hover {
-  background: none;
-  color: none;
-}
-header nav .theLogo {
-  background: none;
-  text-align: center;
-}
-header nav .theLogo img {
+.my-own-header .navbar .navbar-nav .with-img img {
   width: 100px;
 }
-header .header-content {
+.my-own-header .navbar .navbar-nav .with-img img:hover {
+  cursor: pointer;
+}
+.my-own-header .header-content {
   padding-top: 100px;
 }
-header .header-content img {
+.my-own-header .header-content img {
   width: 35%;
 }
-header .banner {
+.my-own-header .banner {
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 100%;
@@ -723,6 +730,7 @@ footer .to-top button {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
+  height: 100vh;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -788,6 +796,7 @@ footer .to-top button {
   background: url("../images/costs/back2.jpg");
   -webkit-background-size: cover;
           background-size: cover;
+  height: 100vh;
   padding-top: 150px;
   padding-bottom: 90px;
 }
@@ -895,4 +904,12 @@ body {
       -ms-flex-item-align: end;
           align-self: flex-end;
   margin-left: -20px;
+}
+.the-test {
+  background: blue;
+}
+@media (max-width: 576px) {
+  .the-test {
+    background: orange;
+  }
 }

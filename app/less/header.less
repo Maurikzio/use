@@ -1,43 +1,58 @@
-header{
+.my-own-header{
     background: url("../images/header/header-background.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     position: relative;
     margin-bottom: 0px;
-    nav{
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 999;
-        a{
-            color: white;
-            text-transform: uppercase;
-            font-size: 20px;
-            width: 170px;
-            background: transparent;
-            &:hover{
-                background: white;
-                color: black;
-                text-decoration: none;
-                transition: .5s ease-in-out;
-            }
-            &:nth-child(4):hover{
-                background: none;
-                color: none;
-            }
-            
+    .navbar{
+        // background: red;
+        padding-top: 0px; 
+        padding-bottom: 0px;
+        button{
+            cursor: pointer;
         }
-        .theLogo{
-            background: none;
-            text-align: center;
+        .navbar-brand{
+            display: none;
             img{
-                width: 100px;          
+                width: 50px;
+                background: pink;
+            }
+        }
+        .navbar-nav{
+            // background: orange;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            
+            .nav-item{
+                text-align: center;
+                width: 14.28%;
+                a{
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    background: transparent;
+                    transition: .5s all ease-in-out;
+                    &:hover{
+                        color: black;
+                        background: white;
+                        transition: .5s ease-in-out;
+                    }
+                }
+            }
+            .with-img{
+                img{
+                    width: 100px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
+
+   
     .header-content{
         padding-top: 100px;
         img{
@@ -59,6 +74,16 @@ header{
         .header-content{
             // background: red;
             padding-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    header{
+
+
+        nav{
+
         }
     }
 }
