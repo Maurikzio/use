@@ -16,7 +16,7 @@
             display: none;
             img{
                 width: 50px;
-                background: pink;
+                // background: pink;
             }
         }
         .navbar-nav{
@@ -79,11 +79,30 @@
 }
 
 @media (max-width: 576px){
-    header{
-
-
-        nav{
-
+    .container-fluid{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 5px;
+        .navbar{
+            .navbar-brand{
+                display: block;
+            }
+            .navbar-toggler{
+                border-color: black;
+                span{
+                    font-weight: 700;
+                    font-size: 35px;
+                }
+            }
+            #nav-content{
+                background: grey;
+                .navbar-nav{
+                    background: orange;
+                    .with-img{
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }

@@ -19,7 +19,6 @@
 }
 .my-own-header .navbar .navbar-brand img {
   width: 50px;
-  background: pink;
 }
 .my-own-header .navbar .navbar-nav {
   width: 100%;
@@ -75,5 +74,31 @@
 @media (min-width: 1320px) {
   header .header-content {
     padding-top: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px;
+  }
+  .container-fluid .navbar .navbar-brand {
+    display: block;
+  }
+  .container-fluid .navbar .navbar-toggler {
+    border-color: black;
+  }
+  .container-fluid .navbar .navbar-toggler span {
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .container-fluid .navbar #nav-content {
+    background: grey;
+  }
+  .container-fluid .navbar #nav-content .navbar-nav {
+    background: orange;
+  }
+  .container-fluid .navbar #nav-content .navbar-nav .with-img {
+    display: none;
   }
 }
