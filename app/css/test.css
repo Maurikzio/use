@@ -52,6 +52,13 @@ header .navbar .navbar-nav .with-img img,
 .container-fluid .navbar .navbar-nav .with-img img {
   width: 100px;
 }
+.fotikos ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.fotikos ul li img {
+  width: 10%;
+}
 @media (max-width: 576px) {
   .container-fluid {
     padding-left: 0px;

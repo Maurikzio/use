@@ -78,8 +78,6 @@
 }
 @media (max-width: 576px) {
   .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
     padding-top: 5px;
   }
   .container-fluid .navbar .navbar-brand {
@@ -92,13 +90,13 @@
     font-weight: 700;
     font-size: 35px;
   }
-  .container-fluid .navbar #nav-content {
-    background: grey;
-  }
-  .container-fluid .navbar #nav-content .navbar-nav {
-    background: orange;
+  .container-fluid .navbar #nav-content .navbar-nav .nav-item {
+    width: 100%;
   }
   .container-fluid .navbar #nav-content .navbar-nav .with-img {
     display: none;
+  }
+  .container-fluid .row .header-content img {
+    width: 75%;
   }
 }

@@ -78,8 +78,6 @@
 }
 @media (max-width: 576px) {
   .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
     padding-top: 5px;
   }
   .container-fluid .navbar .navbar-brand {
@@ -92,14 +90,14 @@
     font-weight: 700;
     font-size: 35px;
   }
-  .container-fluid .navbar #nav-content {
-    background: grey;
-  }
-  .container-fluid .navbar #nav-content .navbar-nav {
-    background: orange;
+  .container-fluid .navbar #nav-content .navbar-nav .nav-item {
+    width: 100%;
   }
   .container-fluid .navbar #nav-content .navbar-nav .with-img {
     display: none;
+  }
+  .container-fluid .row .header-content img {
+    width: 75%;
   }
 }
 .information {
@@ -112,12 +110,11 @@
   overflow-y: hidden;
 }
 .information .why-abroad {
-  background: yellow;
   margin-bottom: 150px;
   position: relative;
 }
 .information .why-abroad .why-abroad-content {
-  background: #515751;
+  background: #16272b;
   margin-left: auto;
   position: relative;
   padding-top: 50px;
@@ -131,7 +128,7 @@
   height: 2px;
 }
 .information .why-abroad .why-abroad-content h1 {
-  color: white;
+  color: #F5F9E9;
   text-transform: uppercase;
   font-size: 30px;
   text-align: center;
@@ -158,8 +155,8 @@
   position: relative;
 }
 .information .ukraine .ukraine-content {
-  background: #515751;
-  color: white;
+  background: #16272b;
+  color: #F5F9E9;
   padding-top: 50px;
   padding-bottom: 40px;
   position: relative;
@@ -179,7 +176,6 @@
   letter-spacing: 7px;
 }
 .information .ukraine .ukraine-content p {
-  color: #F5F9E9;
   font-size: 18px;
   text-align: center;
 }
@@ -192,6 +188,76 @@
   position: absolute;
   top: -35px;
   right: -2%;
+}
+@media (max-width: 576px) {
+  .information {
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    overflow-y: visible;
+  }
+  .information .why-abroad {
+    margin-bottom: 0px;
+  }
+  .information .why-abroad .why-abroad-content {
+    padding-top: 40px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .information .why-abroad .why-abroad-content hr {
+    display: none;
+  }
+  .information .why-abroad .why-abroad-content h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid #E65634;
+    -webkit-box-shadow: 0 5px #666;
+            box-shadow: 0 5px #666;
+    -webkit-border-radius: 14px;
+            border-radius: 14px;
+    background: #E65634;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  .information .why-abroad .why-abroad-content #why-abroad-exp {
+    display: none;
+    color: white;
+  }
+  .information .why-abroad .why-abroad-img {
+    display: none;
+  }
+  .information .ukraine .ukraine-content {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .information .ukraine .ukraine-content hr {
+    display: none;
+  }
+  .information .ukraine .ukraine-content h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid #E65634;
+    -webkit-box-shadow: 0 5px #666;
+            box-shadow: 0 5px #666;
+    -webkit-border-radius: 14px;
+            border-radius: 14px;
+    background: #E65634;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  .information .ukraine .ukraine-content #ukr-exp {
+    display: none;
+  }
+  .information .ukraine .ukraine-img {
+    display: none;
+  }
 }
 @media (min-width: 1320px) {
   .information .why-abroad .why-abroad-img {
@@ -225,10 +291,6 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -387,6 +449,7 @@
   position: absolute;
   bottom: -60px;
   left: 30%;
+  background: black;
 }
 .destinos #modal-video #toCloseVideo {
   position: absolute;
@@ -466,10 +529,71 @@
           border-radius: 10px;
   cursor: pointer;
 }
+@media (max-width: 576px) {
+  .destinos {
+    padding-top: 10px;
+  }
+  .destinos .row {
+    padding-right: 0px;
+  }
+  .destinos .row h2 {
+    font-size: 20px;
+  }
+  .destinos .row hr {
+    width: 50%;
+  }
+  .destinos .row .destinos-list {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 80px;
+  }
+  .destinos .row .destinos-list .toModal {
+    height: 100px;
+    margin-top: 10px;
+  }
+  .destinos .row .destinos-list .toModal:nth-child(3):after {
+    bottom: -50px;
+  }
+  .destinos .row .destinos-list .toModal:after {
+    font-size: 16px;
+    bottom: -30px;
+  }
+  .destinos .row .videos-list li {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .destinos .row .videos-list li .the-video {
+    width: 80px;
+    height: 80px;
+    padding-top: 15px;
+  }
+  .destinos .row .videos-list li .the-video p {
+    font-size: 50px;
+  }
+  .destinos .row .videos-list li .the-video p i {
+    line-height: 30px;
+  }
+  .destinos .row #modal-video {
+    background: black;
+    left: 0;
+  }
+  .destinos .row #modal-video #toCloseVideo {
+    left: 70%;
+    top: -5px;
+    background: red;
+  }
+  .destinos .row #modal-video video {
+    width: 100%;
+  }
+}
 .contactUs {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  background: white;
 }
 .contactUs .location {
   margin-top: 15px;
@@ -624,6 +748,13 @@
 .contactUs .contact-info .our-media ul li .the-FB {
   padding-right: 15px;
   padding-left: 15px;
+}
+@media (max-width: 576px) {
+  .contactUs #my-arrow {
+    width: 50%;
+    left: 0px;
+    top: 30px;
+  }
 }
 footer {
   background: #13181a;
@@ -817,6 +948,12 @@ footer .to-top button {
   background: snow;
   padding-top: 5px;
 }
+@media (max-width: 576px) {
+  .the-video video {
+    width: 100%;
+    height: auto;
+  }
+}
 .living-costs {
   background: url("../images/costs/back2.jpg");
   -webkit-background-size: cover;
@@ -862,6 +999,7 @@ footer .to-top button {
 }
 body {
   font-family: 'Quicksand';
+  background: #13181a;
 }
 .the-main-page {
   background: url("../images/mainPage/back-main.png") no-repeat;

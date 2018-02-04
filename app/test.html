@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     
+    <!-- owl carowusel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
@@ -30,7 +37,7 @@
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
             </button>
             
             <!-- Links -->
@@ -62,8 +69,12 @@
         </nav>
 </header>
 
-<section>
-    <!-- <h1 class="d-sm-none">kdebifviwebfknwkf</h1> -->
+<section class="container fotikos">
+    <ul class="row" id="here">
+        <li><img src="images/destiny/ivano.jpg" alt=""></li>
+        <li><img src="images/destiny/kiev.jpg" alt=""></li>
+        <li><img src="images/destiny/lviv.jpg" alt=""></li>
+    </ul>
 </section>
 
 
@@ -74,6 +85,21 @@
 <!-- jQuery library -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
+<script>
+    $(document).ready(function(){
+        var here = document.getElementById("here");
+        if (window.matchMedia("(min-width: 400px)").matches) {
+        /* the viewport is at least 400 pixels wide */
+        document.body.style.backgroundColor = "yellow";
+        } else {
+        /* the viewport is less than 400 pixels wide */
+        document.body.style.backgroundColor = "pink";
+        }
+    });
+</script>
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+
 <!-- Popper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 
@@ -81,7 +107,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 <!-- <script src="js/bootstrap.min.js"></script> -->
-<!-- <script src="js/test.js"></script> -->
+<script src="js/test.js"></script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79l68_IxJ0QRvlPqDTx8TDAdNVTs6NGY&callback=initMap">
 </script>

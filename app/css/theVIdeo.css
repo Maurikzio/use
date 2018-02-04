@@ -2,3 +2,9 @@
   background: snow;
   padding-top: 5px;
 }
+@media (max-width: 576px) {
+  .the-video video {
+    width: 100%;
+    height: auto;
+  }
+}

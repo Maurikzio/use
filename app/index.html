@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">  -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <!-- owl carowusel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="css/main.css">
     <title>USE | University Studies Europe</title>    
 </head>
@@ -66,11 +85,11 @@
         <div class="row">
             <div class="why-abroad col-12">
                 <div class="row">
-                    <div class="why-abroad-content col-8">
+                    <div class="why-abroad-content col-12 col-md-8">
                         <hr>
-                        <h1>porque estudiar en el extranjero?</h1>
+                        <h1 id="button1">porque estudiar en el extranjero?</h1>
                         <hr>                        
-                        <p>
+                        <p id="why-abroad-exp">
                             Estudiar en el extranjero es una experiencia que conlleva muchos retos, pero así mismo muchas recompensas, además de conocer otro idioma es una gran oportunidad para conocer una cultura totalmente diferente y lo mejor de todo es que podrás vivir muchas aventuras que jamás vas a olvidar.
                             El estudiar en el extranjero te ayuda a ver el mundo totalmente diferente, te ayuda a convertirte en una persona totalmente autosuficiente y responsable no solo en la Universidad sino también en el medio donde vives, es una gran oportunidad para aprender varios idiomas con la práctica, puedes establecer contactos internacionales tanto profesionales como amistades duraderas, esta experiencia también te va ayudar con tu crecimiento personal, te va ayudar a tomar decisiones en un nuevo entorno y vas a poner a prueba tus habilidades como persona.
                         </p>
@@ -81,11 +100,11 @@
             </div>
             <div class="ukraine col-12">
                 <div class="row">
-                    <div class="ukraine-content col-8">
+                    <div class="ukraine-content col-12 col-md-8">
                         <hr>                        
-                            <h2>Ucrania</h2>
+                        <h2 id="button2">Ucrania</h2>
                         <hr>                        
-                        <p>
+                        <p id="ukr-exp">
                             Ucrania es uno de los países más grandes de Europa además de tener una larga y orgullosa historia de la educación superior, con las primeras instituciones de educación superior que surgen en el país ya en los siglos 16 y 17. A partir de 1991, el país comenzó a modificar y modernizar su sistema para volver a sus raíces como uno de los mejores sistemas de educación superior de Europa. Hoy en día, el país combina la educación, tanto académica y práctica en su programa de estudios.
                             Ucrania cuenta con algunas de las mejores instituciones de educación superior en Europa del Este. Con más de 800 universidades para elegir, tanto en las grandes ciudades y las zonas más remotas, los estudiantes están seguros de encontrar uno que se adapte a sus necesidades.
                             Kiev es la ciudad más grande de Ucrania y ofrece más de una docena de excelentes universidades dedicadas a la medicina, carreras de ingeniería, y las artes. 
@@ -97,7 +116,7 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid the-video">
+    <section class="container-fluid the-video text-center">
         <div class="row">
             <div class="col-12 text-center">
                 <video controls>
@@ -106,10 +125,10 @@
             </div>
         </div>
     </section>
-    <section class="destinos container-fluid">
+    <section class="destinos container">
         <div class="row">
             <hr>
-            <h2 class="col-12 text-center">Destinos</h2>
+                <h2 class="col-12 text-center">Destinos</h2>
             <hr>
             <ul class="destinos-list col-12">
                 <li id="toModalLviv" class="toModal">
@@ -127,19 +146,18 @@
                 </li>
                 <li>
                     <div class="the-video video-kiev">
-                        <p><i class="fa fa-play-circle" aria-hidden="true"></i></p>
+                        <p id="toVideoKiev" ><i class="fa fa-play-circle" aria-hidden="true"></i></p>
                     </div>
                 </li>
                 <li>
                     <div class="the-video video-ivano">
-                        <p><i class="fa fa-play-circle" aria-hidden="true"></i></p>
+                        <p id="toVideoIvano"><i class="fa fa-play-circle" aria-hidden="true"></i></p>
                     </div>
                 </li>
             </ul>
-            <div id="modal-video" class="animated bounceInDown">
+            <div id="modal-video" class="animated bounceInLeft">
                 <span id="toCloseVideo" class="close-Modal">&times;</span>                
-                <video width="520" height="300" controls>
-                    <source src="videos/video-lviv.mp4" type="video/mp4">
+                <video id="myVideo" width="520" height="300" controls>
                 </video>
             </div>
             <div id="myModal" class="col-10 animated bounceInLeft">
@@ -156,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section class="contactUs container" id="theContact">
+    <section class="contactUs container-fluid" id="theContact">
         <div class="row">
             <div class="location col-12">
                 <img src="images/click-here-arrow.png" alt="" id="my-arrow">
@@ -168,7 +186,7 @@
                     </li>
                     <li>
                         <p id="modal-stoD"><i class="fa fa-map-marker" aria-hidden="true"></i></p>
-                        <p class="the-address ">Sto. Domingo<span class="stoD">Av. 29 de Mayo y Tsachilas esquina.</span></p>                                   
+                        <p class="the-address ">Sto. Domingo<span class="stoD">Av. Chone y Av. Esmeraldas, Y del Indio Colorado, Edificio: Chavez y Alverca</span></p>                                   
                     </li>
                 </ul>
             </div>
@@ -202,7 +220,7 @@
             </div>
         </div>
     </section>
-    <footer class="container-fluid">
+    <footer class="container">
         <div class="row">
             <div class="the-rights col-10">
                 <p>Copyrigth ©2018 USE, all rights reserved</p>
@@ -212,12 +230,33 @@
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79l68_IxJ0QRvlPqDTx8TDAdNVTs6NGY&callback=initMap">
-    </script>
+    </script> -->
+
+    <!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<!-- <script src="js/test.js"></script> -->
+
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/script.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79l68_IxJ0QRvlPqDTx8TDAdNVTs6NGY&callback=initMap">
+</script>
+
 </body>
 </html>

@@ -8,12 +8,11 @@
   overflow-y: hidden;
 }
 .information .why-abroad {
-  background: yellow;
   margin-bottom: 150px;
   position: relative;
 }
 .information .why-abroad .why-abroad-content {
-  background: #515751;
+  background: #16272b;
   margin-left: auto;
   position: relative;
   padding-top: 50px;
@@ -27,7 +26,7 @@
   height: 2px;
 }
 .information .why-abroad .why-abroad-content h1 {
-  color: white;
+  color: #F5F9E9;
   text-transform: uppercase;
   font-size: 30px;
   text-align: center;
@@ -54,8 +53,8 @@
   position: relative;
 }
 .information .ukraine .ukraine-content {
-  background: #515751;
-  color: white;
+  background: #16272b;
+  color: #F5F9E9;
   padding-top: 50px;
   padding-bottom: 40px;
   position: relative;
@@ -75,7 +74,6 @@
   letter-spacing: 7px;
 }
 .information .ukraine .ukraine-content p {
-  color: #F5F9E9;
   font-size: 18px;
   text-align: center;
 }
@@ -88,6 +86,76 @@
   position: absolute;
   top: -35px;
   right: -2%;
+}
+@media (max-width: 576px) {
+  .information {
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    overflow-y: visible;
+  }
+  .information .why-abroad {
+    margin-bottom: 0px;
+  }
+  .information .why-abroad .why-abroad-content {
+    padding-top: 40px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .information .why-abroad .why-abroad-content hr {
+    display: none;
+  }
+  .information .why-abroad .why-abroad-content h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid #E65634;
+    -webkit-box-shadow: 0 5px #666;
+            box-shadow: 0 5px #666;
+    -webkit-border-radius: 14px;
+            border-radius: 14px;
+    background: #E65634;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  .information .why-abroad .why-abroad-content #why-abroad-exp {
+    display: none;
+    color: white;
+  }
+  .information .why-abroad .why-abroad-img {
+    display: none;
+  }
+  .information .ukraine .ukraine-content {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .information .ukraine .ukraine-content hr {
+    display: none;
+  }
+  .information .ukraine .ukraine-content h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid #E65634;
+    -webkit-box-shadow: 0 5px #666;
+            box-shadow: 0 5px #666;
+    -webkit-border-radius: 14px;
+            border-radius: 14px;
+    background: #E65634;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  .information .ukraine .ukraine-content #ukr-exp {
+    display: none;
+  }
+  .information .ukraine .ukraine-img {
+    display: none;
+  }
 }
 @media (min-width: 1320px) {
   .information .why-abroad .why-abroad-img {

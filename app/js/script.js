@@ -65,18 +65,37 @@ Es una ciudad muy conocida ya que alberga muchos estudiantes que desean seguir c
 
 modalLviv.onclick = function(){
     modal.style.display = 'block';
-    modalImg.className = "the-modal-img in-lviv col-4 ";
+    modalImg.className = "the-modal-img in-lviv col-12 col-md-4 ";
     // modalImg.style.background = "url('../images/lviv.jpg')";  
     cityDescription.innerText = `${lvivDescription}`;
     uniList.innerText = `UNIVERSITIES OF LVIV`;
     showUniversities(lvivUniversities, "universities-list");
 }
 var videoLviv = document.getElementById("toVideoLviv");
+var videoKiev = document.getElementById("toVideoKiev");
+var videoIvano = document.getElementById("toVideoIvano");
+
 var videoModal = document.getElementById("modal-video");
-videoLviv.onclick = function(){
-//    alert('playing video');
-   videoModal.style.display = "block"; 
+var myVideo = document.getElementById("myVideo");
+
+function playMyVideo(thesrc){
+    videoModal.style.display = "block"; 
+    myVideo.src=thesrc;
 }
+
+videoLviv.onclick = function(){
+    playMyVideo("../videos/video-lviv.mp4");
+
+}
+videoKiev.onclick = function(){
+    playMyVideo("../videos/video-kiev.mp4");
+
+}
+videoIvano.onclick = function(){
+    playMyVideo("../videos/video-ivano.mp4");
+
+}
+
 modalKiev.onclick = function(){
     modal.style.display = 'block';
     modalImg.className = "the-modal-img in-kiev col-4 ";
@@ -100,6 +119,7 @@ close.onclick = function(){
 }
 closeVideo.onclick = function(){
     modalVideo.style.display = 'none';
+    theSourceVideo.src="";
 }
 
 modalQuito.onclick = function(){
@@ -110,7 +130,7 @@ modalQuito.onclick = function(){
 modalStoD.onclick = function(){
     theMap.style.display = 'block';
     theMap.style.margin = 'auto';    
-    initMap(-0.253929, -79.168334);
+    initMap(-0.253719, -79.176545);
 }
 
 //mapa
@@ -142,3 +162,33 @@ $(".location").one("click mouseenter", function() {
     document.getElementById('my-arrow').style.display = "block";   
 });
 
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $("#why-abroad-exp").toggle();
+    });
+    $("#button2").click(function(){
+        $("#ukr-exp").toggle();
+    });
+});
+
+
+var destinos = document.querySelector('.destinos-list');
+
+function myFunction(x){
+    if (x.matches) { // If media query matches
+        // document.body.style.backgroundColor = "yellow";
+        // destinos.style.backgroundColor = "yellow";
+        // destinos.className = destinos.className+"owl-carousel";
+    } else {
+        // destinos.style.backgroundColor = "none";
+    }
+}
+
+var x = window.matchMedia("(max-width: 576px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
+
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });

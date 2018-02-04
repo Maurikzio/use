@@ -2,6 +2,7 @@
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+  background: white;
 }
 .contactUs .location {
   margin-top: 15px;
@@ -156,4 +157,11 @@
 .contactUs .contact-info .our-media ul li .the-FB {
   padding-right: 15px;
   padding-left: 15px;
+}
+@media (max-width: 576px) {
+  .contactUs #my-arrow {
+    width: 50%;
+    left: 0px;
+    top: 30px;
+  }
 }

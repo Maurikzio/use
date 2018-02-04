@@ -20,8 +20,9 @@
     .destinos-list{
         list-style: none;
         // padding-left: 15px;
+        // width: 100%;
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         // background: red;
         height: 200px;
@@ -150,7 +151,7 @@
         position: absolute;
         bottom: -60px;
         left: 50%-20px;
-        // background: red;
+        background: black;
         #toCloseVideo{
             position: absolute;
             color: white;
@@ -236,4 +237,73 @@
             }
         }
     }
+}
+
+@media (max-width: 576px){
+    .destinos{
+        padding-top: 10px;
+        .row{
+            padding-right: 0px;
+            h2{
+                font-size: 20px;
+                
+            }
+            hr{
+                width: 50%;
+            }
+            .destinos-list{
+                // flex-direction: column;
+                flex-wrap: wrap;
+                height: auto;
+                margin-top: 5px;
+                margin-bottom: 80px;
+                .toModal{
+                    height: 100px;
+                    margin-top: 10px;
+                    &:nth-child(3){
+                        &:after{
+                            bottom: -50px;
+                        }
+                    }
+                    &:after{
+                        font-size: 16px;
+                        bottom: -30px;
+                    }
+                    
+                }
+            }
+            .videos-list{
+                li{
+                    // width: 200px;
+                    // height: 300px;
+                    // background: orange;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    .the-video{
+                        width: 80px;
+                        height: 80px;
+                        padding-top: 15px;
+                        p{
+                            font-size: 50px;
+                            i{
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }   
+            }
+            #modal-video{
+                background: black;
+                left: 0;
+                #toCloseVideo{
+                    left: 70%;
+                    top: -5px;
+                    background: red;
+                }
+                video{
+                    width: 100%;
+                }
+            }
+        }
+    }   
 }
