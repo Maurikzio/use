@@ -48,3 +48,15 @@
   top: 0;
   z-index: 3;
 }
+@media (max-width: 576px) {
+  .aboutUs-content {
+    padding-top: 100px;
+  }
+  .aboutUs-content .heading hr {
+    width: 70%;
+  }
+  .aboutUs-content .power-of-study h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+  }
+}

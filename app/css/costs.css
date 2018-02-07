@@ -21,7 +21,23 @@
   background: rgba(0, 0, 0, 0.7);
   margin: auto;
   width: 50%;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+}
+@media (max-width: 576px) {
+  .living-costs {
+    padding-top: 100px;
+    height: 100%;
+  }
+  .living-costs .heading h2 {
+    font-size: 30px;
+  }
+  .living-costs .heading hr {
+    width: 88%;
+  }
+  .living-costs .alojamiento .the-icon {
+    width: 75%;
+  }
 }

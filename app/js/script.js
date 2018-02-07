@@ -191,4 +191,4 @@ x.addListener(myFunction); // Attach listener function on state changes
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
-  });
+});

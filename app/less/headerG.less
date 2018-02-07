@@ -1,44 +1,88 @@
-.body{
-    // position: relative;
-}
 .header-g{
-    // background: url("../images/group.jpg") center;
-    // background: rgb(209, 123, 123);
     background:transparent;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // margin-bottom: 0px;
     height: auto;
     position: absolute;
     z-index: 999;
-    nav{
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 999;
-        // background: green;
-        a{
-            color: white;
-            text-transform: uppercase;
-            font-size: 20px;
-            width: 170px;
-            
+    .navbar{
+        // background: red;
+        padding-top: 0px; 
+        padding-bottom: 0px;
+        button{
+            cursor: pointer;
         }
-        .theLogo{
-            background: none;
-            text-align: center;
+        .navbar-brand{
+            display: none;
             img{
-                width: 100px;          
+                width: 50px;
+                // background: pink;
             }
         }
-    }
-
-    
+        .navbar-nav{
+            // background: orange;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;         
+            .nav-item{
+                text-align: center;
+                width: 14.28%;
+                a{
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    background: transparent;
+                    transition: .5s all ease-in-out;
+                    &:hover{
+                        color: black;
+                        background: white;
+                        transition: .5s ease-in-out;
+                    }
+                }
+            }
+            .with-img{
+                img{
+                    width: 100px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    } 
 }
-
-@media (min-width: 1320px){
-    header{
+@media (max-width: 576px){
+    .header-g{
+        .navbar{
+            .navbar-brand{
+                display: block;
+            }
+            .navbar-toggler{
+                border-color: black;
+                span{
+                    font-weight: 700;
+                    font-size: 35px;
+                }
+            }
+            #nav-content{
+                background: grey;
+                .navbar-nav{
+                    // background: orange;
+                    background: rgb(19, 24, 26);
+                    
+                    .nav-item{
+                        width: 100%;
+                        .nav-link{
+                            // color: #E65634;
+                            &:active{
+                                background: green;
+                            }
+                        }
+                        
+                    }
+                    .with-img{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

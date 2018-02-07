@@ -4,81 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">  -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <!-- owl carowusel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="css/main.css">
-    <title>USE | University Studies Europe</title>    
+    <title>USE | University Studies Europe</title>      
 </head>
 <body>
     <header class="header-g container-fluid">
-        <nav class="row">
-            <a href="index.html" class="text-center">home</a>
-            <a href="aboutUs.html" class="text-center">nosotros</a>
-            <a href="index.html#theContact" class="text-center">contacto</a>            
-            <a href="index.html" class="theLogo">
-                <img src="images/header/logo-nav.png" alt="logo here" class="img-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/header/logo-nav.png" alt="logo here" class="">                
             </a>
-            <a href="levels.html" class="text-center">niveles</a>
-            <a href="costs.html" class="text-center">costos de vida</a>
-            <a href="gallery.html" class="text-center">galeria</a> 
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><i class="fa fa-bars"></i></span>
+            </button>
+            
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="nav-content">   
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#theContact">Contacto</a>
+                    </li>
+                    <li class="nav-item with-img">
+                        <img src="images/header/logo-nav.png" alt="logo here" class="img-fluid">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="levels.html">Niveles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="costs.html">Costos de vida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeria</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <section class="levels container-fluid">
             <ul class="levels-list row justify-content-center">
-                <li class="the-level jr col-5">
+                <li class="the-level jr col-12 col-md-5">
                     <div class="row lvl-content">
-                        <div class="lvl-description col-8">
+                        <div class="lvl-description col-12 col-md-8">
                             <p>
                                 Incluye escuelas de formación técnico-profesional y otras instituciones de educación superior que brindan programas de especialista junior. Este es un tipo de educación superior incompleta y el alumno recibe el título de Especialista Junior.
                             </p>
                         </div>
-                        <div class="lvl-icon col-4 text-center">
+                        <div class="lvl-icon col-12 col-md-4 text-center">
                             <i class="fa fa-book" aria-hidden="true"></i>
                             <p>Especialista Junior</p>  
                         </div>
                     </div>
                 </li>
-                <li class="the-level lic col-5">
+                <li class="the-level lic col-12 col-md-5">
                     <div class="row lvl-content">
-                        <div class="lvl-description col-8">
+                        <div class="lvl-description col-12 col-md-8">
                             <p>
                                 Incluye escuelas universitarias y otras instituciones de educación superior que dictan cursos a estudiantes y especialistas junior, mediante el uso de programas educativos y profesionales. Esto también se denomina enseñanza superior básica y conduce a un título de Licenciatura.
                             </p>
                         </div>
-                        <div class="lvl-icon col-4 text-center">
+                        <div class="lvl-icon col-12 col-md-4 text-center">
                             <i class="fa fa-users" aria-hidden="true"></i>
                             <p>Licenciatura</p>  
                         </div>
                     </div>    
                 </li>
-                <li class="the-level esp col-5">
+                <li class="the-level esp col-12 col-md-5">
                     <div class="row lvl-content">
-                        <div class="lvl-description col-8">
+                        <div class="lvl-description col-12 col-md-8">
                             <p>
                                 Incluye institutos, conservatorios, academias y universidades que dictan cursos a licenciados y especialistas junior mediante programas educativos y profesionales. Esto se denomina educación superior completa y conduce a un título de Especialista y de Maestría.
                             </p>
                         </div>
-                        <div class="lvl-icon col-4 text-center">
+                        <div class="lvl-icon col-12 col-md-4 text-center">
                             <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                             <p>Especialista</p>  
                         </div>
                     </div>
                 </li>
-                <li class="the-level mst col-5">
+                <li class="the-level mst col-12 col-md-5">
                     <div class="row lvl-content">
-                        <div class="lvl-description col-8">
+                        <div class="lvl-description col-12 col-md-8">
                             <p>
                                 Incluye institutos, conservatorios, academias y universidades que dictan cursos a  licenciados, magísteres y especialistas (en caso de ser necesario), mediante el uso de programas educativos y profesionales.
                             </p>
                         </div>
-                        <div class="lvl-icon col-4 text-center">
+                        <div class="lvl-icon col-12 col-md-4 text-center">
                             <i class="fa fa-university" aria-hidden="true"></i>
                             <p>Maestria</p>  
                         </div>
@@ -86,5 +131,32 @@
                 </li>
             </ul>
     </section>
+           <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79l68_IxJ0QRvlPqDTx8TDAdNVTs6NGY&callback=initMap">
+    </script> -->
+
+    <!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<!-- <script src="js/test.js"></script> -->
+
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/script.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79l68_IxJ0QRvlPqDTx8TDAdNVTs6NGY&callback=initMap">
+</script>
 </body>
 </html>

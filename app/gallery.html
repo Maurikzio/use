@@ -18,16 +18,42 @@
 <body class="body-gallery">
 
     <header class="header-g container-fluid">
-        <nav class="row">
-            <a href="index.html" class="text-center">home</a>
-            <a href="aboutUs.html" class="text-center">nosotros</a>
-            <a href="index.html#theContact" class="text-center">contacto</a>            
-            <a href="index.html" class="theLogo">
-                <img src="images/header/logo-nav.png" alt="logo here" class="img-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/header/logo-nav.png" alt="logo here" class="">                
             </a>
-            <a href="levels.html" class="text-center">niveles</a>
-            <a href="costs.html" class="text-center">costos de vida</a>
-            <a href="gallery.html" class="text-center">galeria</a> 
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><i class="fa fa-bars"></i></span>
+            </button>
+            
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="nav-content">   
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#theContact">Contacto</a>
+                    </li>
+                    <li class="nav-item with-img">
+                        <img src="images/header/logo-nav.png" alt="logo here" class="img-fluid">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="levels.html">Niveles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="costs.html">Costos de vida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeria</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -83,5 +109,42 @@
             </div>
         </div>
     </section>
+    <footer class="container">
+        <div class="row">
+            <div class="the-rights col-10">
+                <p>Copyrigth ©2018 USE, all rights reserved</p>
+            </div>
+            <div class="to-top col-2">
+                <button onclick="myScroll(0)" ><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </footer>
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79l68_IxJ0QRvlPqDTx8TDAdNVTs6NGY&callback=initMap">
+    </script> -->
+
+    <!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<!-- <script src="js/test.js"></script> -->
+
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/script.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79l68_IxJ0QRvlPqDTx8TDAdNVTs6NGY&callback=initMap">
+</script>
 </body>
 </html>
