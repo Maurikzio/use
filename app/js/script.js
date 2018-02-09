@@ -14,12 +14,6 @@ var modalQuito = document.getElementById('modal-quito');
 var modalStoD = document.getElementById('modal-stoD');
 var theMap = document.getElementById('map');
 
-// var lvivUniversities = ["Universidad Politecnica de Lviv", "universidad de Medicina de Lviv", "Universidad ivano Franco Lviv", "Universidad de comercio y economia de Lviv", "Universidad de cultura fisica", "Academia nacional de musica de Lviv"];
-
-// var kievUniversities = ["Universidad acional de kiev aras Shevchenko", "Universidad politecnica nacional Igos Sicorsky kiev", "univetrsidad de aviacion de Kiev"];
-
-// var ivanoUniversities = ["Universidadtecnica nacional de petroleo y gas Ivano-Frankivsk"];
-
 var lvivUniversities = [
     {name: "Universidad Politecnica de Lviv", url: "http://lp.edu.ua/en"},
     {name: "Universidad de Medicina de lviv", url: "http://www.meduniv.lviv.ua/"},
@@ -68,7 +62,7 @@ modalLviv.onclick = function(){
     modalImg.className = "the-modal-img in-lviv col-12 col-md-4 ";
     // modalImg.style.background = "url('../images/lviv.jpg')";  
     cityDescription.innerText = `${lvivDescription}`;
-    uniList.innerText = `UNIVERSITIES OF LVIV`;
+    uniList.innerText = `UNIVERSIDADES DE LVIV`;
     showUniversities(lvivUniversities, "universities-list");
 }
 var videoLviv = document.getElementById("toVideoLviv");
@@ -98,18 +92,18 @@ videoIvano.onclick = function(){
 
 modalKiev.onclick = function(){
     modal.style.display = 'block';
-    modalImg.className = "the-modal-img in-kiev col-4 ";
+    modalImg.className = "the-modal-img in-kiev col-12 col-md-4 img-fluid";
     // modalImg.style.background = "url('../images/kiev.jpg')";  
     cityDescription.innerText = `${kievDescription}`;
-    uniList.innerText = `UNIVERSITIES OF KIEV`;
+    uniList.innerText = `UNIVERSIDADES DE KIEV`;
     showUniversities(kievUniversities, "universities-list");    
 }
 modalIvano.onclick = function(){
     modal.style.display = 'block';
-    modalImg.className = "the-modal-img in-ivano col-4 ";
+    modalImg.className = "the-modal-img in-ivano col-12 col-md-4 ";
     // modalImg.style.background = "url('../images/ivano2.jpg')";   
     cityDescription.innerText = `${ivanoDescription}`;
-    uniList.innerText = `UNIVERSITIES OF IVANO FRANKIVSK`; 
+    uniList.innerText = `UNIVERSIDADES DE IVANO FRANKIVSK`; 
     showUniversities(ivanoUniversities, "universities-list");   
 }
 

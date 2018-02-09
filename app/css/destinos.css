@@ -318,4 +318,14 @@
   .destinos .row #modal-video video {
     width: 100%;
   }
+  .destinos .row #myModal {
+    top: 50px;
+  }
+  .destinos .row #myModal .the-modal-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .destinos .row #myModal .the-modal-content #the-text #city-description {
+    display: none;
+  }
 }

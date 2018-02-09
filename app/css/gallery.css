@@ -14,3 +14,11 @@
 .body-gallery .gallery-content .third-column img {
   margin-top: 15px;
 }
+.body-gallery footer {
+  margin-top: 15px;
+  background: white;
+  color: #13181a;
+}
+.body-gallery footer .to-top button i {
+  color: #13181a;
+}

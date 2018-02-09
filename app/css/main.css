@@ -588,6 +588,16 @@
   .destinos .row #modal-video video {
     width: 100%;
   }
+  .destinos .row #myModal {
+    top: 50px;
+  }
+  .destinos .row #myModal .the-modal-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .destinos .row #myModal .the-modal-content #the-text #city-description {
+    display: none;
+  }
 }
 .contactUs {
   text-align: center;
@@ -1071,7 +1081,6 @@ footer .to-top button {
   background: url("../images/costs/back2.jpg");
   -webkit-background-size: cover;
           background-size: cover;
-  height: 100vh;
   padding-top: 150px;
   padding-bottom: 90px;
 }
@@ -1125,6 +1134,14 @@ footer .to-top button {
 }
 .body-gallery .gallery-content .third-column img {
   margin-top: 15px;
+}
+.body-gallery footer {
+  margin-top: 15px;
+  background: white;
+  color: #13181a;
+}
+.body-gallery footer .to-top button i {
+  color: #13181a;
 }
 body {
   font-family: 'Quicksand';
