@@ -78,11 +78,11 @@ function playMyVideo(thesrc){
 }
 
 videoLviv.onclick = function(){
-    playMyVideo("../videos/video-lviv.mp4");
+    playMyVideo("videos/video-lviv.mp4");
 
 }
 videoKiev.onclick = function(){
-    playMyVideo("../videos/video-kiev.mp4");
+    playMyVideo("videos/video-kiev.mp4");
 
 }
 videoIvano.onclick = function(){
