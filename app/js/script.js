@@ -86,7 +86,7 @@ videoKiev.onclick = function(){
 
 }
 videoIvano.onclick = function(){
-    playMyVideo("../videos/video-ivano.mp4");
+    playMyVideo("videos/video-ivano.mp4");
 
 }
 
