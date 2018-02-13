@@ -312,7 +312,7 @@
   }
   .destinos .row #modal-video #toCloseVideo {
     left: 70%;
-    top: -5px;
+    top: -65px;
     background: red;
   }
   .destinos .row #modal-video video {
