@@ -158,6 +158,14 @@
   padding-right: 15px;
   padding-left: 15px;
 }
+.contactUs .contact-info .our-media ul .fbLink {
+  position: relative;
+}
+.contactUs .contact-info .our-media ul .fbLink .fb-like {
+  position: absolute;
+  left: -150px;
+  top: 0px;
+}
 @media (max-width: 576px) {
   .contactUs #my-arrow {
     width: 50%;
