@@ -163,8 +163,8 @@
 }
 .contactUs .contact-info .our-media ul .fbLink .fb-like {
   position: absolute;
-  left: -150px;
-  top: 0px;
+  left: -60px;
+  top: 50px;
 }
 @media (max-width: 576px) {
   .contactUs #my-arrow {
