@@ -6,6 +6,7 @@
   height: 100vh;
   position: relative;
   margin-bottom: 0px;
+  background-attachment: fixed;
 }
 .my-own-header .navbar {
   padding-top: 0px;
@@ -1132,6 +1133,7 @@ footer .to-top button {
   background: #13181a;
 }
 .body-gallery .gallery-content {
+  background: #13181a;
   padding-top: 100px;
 }
 .body-gallery .gallery-content .first-column img {
@@ -1144,7 +1146,6 @@ footer .to-top button {
   margin-top: 15px;
 }
 .body-gallery footer {
-  margin-top: 15px;
   background: white;
   color: #13181a;
 }

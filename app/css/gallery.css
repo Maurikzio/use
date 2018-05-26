@@ -3,6 +3,7 @@
   background: #13181a;
 }
 .body-gallery .gallery-content {
+  background: #13181a;
   padding-top: 100px;
 }
 .body-gallery .gallery-content .first-column img {
@@ -15,7 +16,6 @@
   margin-top: 15px;
 }
 .body-gallery footer {
-  margin-top: 15px;
   background: white;
   color: #13181a;
 }

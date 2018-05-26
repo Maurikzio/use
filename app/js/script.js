@@ -168,15 +168,6 @@ $(document).ready(function(){
 
 var destinos = document.querySelector('.destinos-list');
 
-function myFunction(x){
-    if (x.matches) { // If media query matches
-        // document.body.style.backgroundColor = "yellow";
-        // destinos.style.backgroundColor = "yellow";
-        // destinos.className = destinos.className+"owl-carousel";
-    } else {
-        // destinos.style.backgroundColor = "none";
-    }
-}
 
 var x = window.matchMedia("(max-width: 576px)");
 myFunction(x); // Call listener function at run time
